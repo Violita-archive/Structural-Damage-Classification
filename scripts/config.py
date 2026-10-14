@@ -1,4 +1,6 @@
 """
+Konfigurasi global proyek klasifikasi damage grade gempa Nepal 2015.
+
 Berisi path folder, parameter umum, serta pengelompokan kolom
 berdasarkan hasil EDA (notebooks/01_eda.ipynb).
 """
@@ -16,8 +18,8 @@ FIGURE_DIR = ROOT_DIR / "reports" / "figures"
 TRAIN_PATH = DATA_DIR / "train.csv"
 TEST_PATH = DATA_DIR / "test.csv"
 SAMPLE_SUB_PATH = DATA_DIR / "sample_submission.csv"
-MODEL_PATH = MODEL_DIR / "pipeline_model.pkl"
-SUBMISSION_PATH = SUBMISSION_DIR / "submission.csv"
+MODEL_PATH = MODEL_DIR / "pipeline_model_v2.pkl"          # model final terpilih (v2)
+SUBMISSION_PATH = SUBMISSION_DIR / "submission_v2.csv"   # submission final terpilih (v2)
 
 # Parameter umum
 RANDOM_STATE = 42
